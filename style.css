@@ -28,6 +28,7 @@ body{
     background-color: var(--dark-blue);
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
+
 }
 
 .container{ 
@@ -179,4 +180,79 @@ p{
 .back-item:nth-child(6){
     background-color: var(--soft-orange);
     background-image: url("./images/icon-self-care.svg");
+}
+
+@media (min-width: 765px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 120px);
+    }
+
+    .dashboard{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .info-profile{
+        flex-direction: column;
+        height: 330px;
+    }
+
+    .back-item{
+        height: 136px;
+        margin-right: 30px;
+    }
+    .back-item:nth-child(1){
+        margin-bottom: 130px;
+    }
+    
+    .card-profile{
+        width: 240px;
+        margin-right: 30px;
+    }
+
+    .item{
+        width: 300px;
+
+        top:20px;
+    }
+
+    .daily,.weekly,.monthly{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .info-profile{
+        align-items: flex-start;
+        margin-top: 103px;
+
+    }
+
+    .by p{
+        margin-top: 30px;
+        font-size: 17px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+    h1{
+        font-size: 60px;
+        margin-bottom: 5px;
+    }
+    .attribution{
+        margin-bottom: 0;
+        margin-top: 70px;
+    }
+
+    .segmenter{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .segmenter button{
+        margin-top: 20px;
+    }
 }
