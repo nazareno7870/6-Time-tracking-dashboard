@@ -1,0 +1,29 @@
+:root{
+    --blue: hsl(246, 80%, 60%);
+    
+    --light-red: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --lightred-study: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+
+    --dark-blue: hsl(226, 43%, 10%);
+    --d-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%)
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
