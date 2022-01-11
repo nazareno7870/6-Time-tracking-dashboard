@@ -11,11 +11,12 @@
     --dark-blue: hsl(226, 43%, 10%);
     --d-blue: hsl(235, 46%, 20%);
     --desaturated-blue: hsl(235, 45%, 61%);
-    --pale-blue: hsl(236, 100%, 87%)
+    --pale-blue: hsl(236, 100%, 87%);
+
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 50%); margin-bottom: 10px;}
+.attribution a { color: hsl(0, 0%, 100%); }
 
 *{
     box-sizing: border-box;
@@ -24,6 +25,158 @@
 }
 
 body{
+    background-color: var(--dark-blue);
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
+}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-profile{
+    margin-top: 20px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-profile{
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    border-radius: 16px;
+    position: relative;
+    z-index: 200;
+}
+
+.info-profile img{
+    width: 70px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    margin-right: 20px;
+}
+p{
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    color:var(--pale-blue);
+}
+h2{
+    font-size: 24px;
+    font-weight: 300;
+    color: #f7f0ff;
+}
+
+.segmenter{
+    padding: 46px 30px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--d-blue);
+    position: relative;
+    border-radius: 0 0 16px 16px;
+    top: -20px;
+}
+
+.segmenter button{
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+.segmenter button:hover{
+    color: #f7f0ff;
+}
+
+.item{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color:var(--d-blue);
+    width: 340px;
+    border-radius: 16px;
+    position: relative;
+    top:40px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: hsl(236deg 41% 34%);
+}
+
+h4{
+    color: #f7f0ff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h1{
+    color: #f7f0ff;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.top-item,.daily,.weekly,.monthly{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-item{
+    margin-bottom: 10px;
+}
+.weekly,.monthly{
+    display: none;
+}
+
+.segmenter .active-btn{
+    color: #f7f0ff;
+}
+
+.back-item{
+    border-radius: 16px;
+    background-color: var(--light-red);
+    background-image: url("./images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px top -10px;
+}
+
+.back-item:nth-child(2){
+    background-color: var(--soft-blue);
+    background-image: url("./images/icon-play.svg");
+}
+
+.back-item:nth-child(3){
+    background-color: var(--lightred-study);
+    background-image: url("./images/icon-study.svg");
+}
+
+.back-item:nth-child(4){
+    background-color: var(--lime-green);
+    background-image: url("./images/icon-exercise.svg");
+    background-position: right 20px top;
+}
+
+.back-item:nth-child(5){
+    background-color: var(--violet);
+    background-image: url("./images/icon-social.svg");
+}
+
+.back-item:nth-child(6){
+    background-color: var(--soft-orange);
+    background-image: url("./images/icon-self-care.svg");
 }
